@@ -17,7 +17,14 @@ Now, Vivado will create a top-level wrapper HDL file (for this example slave_out
 
 <img width="898" alt="image" src="https://github.com/user-attachments/assets/8a7b50f5-93bf-4481-b289-b392027b8cdc" /><br />
 
-Now, Vivado will create a top-level wrapper HDL file (for this example slave_out, the name of the project) and a Sub-hierarchical axi-slave entity to faciliate the handshake protocol between the axi-master (the processor) and the created IP.<br />
+The AXI controller entity contains the generic AXI-lite input and output ports This entity contains the registers "slv_regXX" which contain the data written by the master to this slave interface; the register being written to is chosen through the S_AXI_AWADDR port. This address input is buffered by the "mem_logic" signal.<br />
+
+<img width="473" alt="image" src="https://github.com/user-attachments/assets/8d927e0a-c77d-4c2e-b6ea-c3dc55dd9c89" /><br />
+
+<img width="423" alt="image" src="https://github.com/user-attachments/assets/73a44f3b-1207-45d0-83a4-fe22cf54aa6a" /><br />
+<img width="460" alt="image" src="https://github.com/user-attachments/assets/8151f6a9-89c1-42ff-85d7-f77d45218968" /><br />
+
+
 
 
 
